@@ -24,3 +24,29 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@layer components {
+  /* Fondo animado y divertido para Pinky's */
+  .bg-pinky-fun {
+    background-color: #E8A2B0;
+    background-image: 
+      radial-gradient(at 20% 20%, #ffccdb 0px, transparent 50%),
+      radial-gradient(at 80% 0%, #f78da7 0px, transparent 50%),
+      radial-gradient(at 0% 50%, #eeabc4 0px, transparent 50%);
+  }
+
+  /* Fondo elegante y texturizado para Punto Cero */
+  .bg-punto-elegant {
+    background-color: #DCC4AA;
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+    background-size: 50px 50px; /* Crea una sutil cuadrícula elegante */
+  }
+}
+
+.bg-pinky-pattern {
+  background-color: #E8A2B0;
+  background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0);
+  background-size: 24px 24px; /* Esto crea un fondo de lunares blancos muy festivo */
+}
