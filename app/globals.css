@@ -50,3 +50,36 @@ body {
   background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0);
   background-size: 24px 24px; /* Esto crea un fondo de lunares blancos muy festivo */
 }
+
+/* PINKYS */
+.splash {
+  position: absolute;
+  animation: splashAnim 2s ease-out infinite;
+}
+
+@keyframes splashAnim {
+  0% { transform: scale(0.1); opacity: 1; }
+  50% { transform: scale(1.2) rotate(15deg); opacity: 0.9; }
+  100% { transform: scale(1.5) rotate(-10deg); opacity: 0; }
+}
+
+/* PUNTO */
+.grow-center {
+  position: absolute;
+  animation: growAnim 4s ease-in-out infinite;
+}
+
+@keyframes growAnim {
+  0% {
+    transform: scale(0.1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.4;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
